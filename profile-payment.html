@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile Payment - Bella Olonje</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="app-viewport">
+    <section class="app-frame">
+      <header class="navbar-top">
+  <a class="navbar-top__return" href="profile.html">
+    <img class="navbar-top__glyph" src="assets/icons/icon-back.svg" alt="Back">
+  </a>
+  <h1 class="navbar-top__label">My profile</h1>
+  
+</header>
+      <div class="user-profile">
+        <h2 class="user-profile__section-title">Information</h2>
+        <article class="identity-card identity-card--compact">
+          <img class="identity-card__portrait" src="assets/images/avatar-profile.png" alt="">
+          <h3 class="identity-card__name">Marvis Ighedosa</h3>
+          <p class="identity-card__detail">Dosamarvis@gmail.com</p>
+          <p class="identity-card__detail">No 15 uti street off ovie palace road effurun delta state</p>
+        </article>
+        <section class="order-summary__section">
+          <h3 class="order-summary__section-title">Payment Method</h3>
+          <form class="info-panel payment-method payment-method--profile">
+            <label class="payment-method__row">
+              <input type="radio" name="payment-method" value="card" class="choice-indicator__input" checked="checked">
+              <span class="choice-indicator"></span>
+              <span class="payment-method__icon-wrap">
+                <img class="payment-method__icon" src="assets/icons/icon-card.svg" alt="">
+              </span>
+              <span class="payment-method__label">Card</span>
+            </label>
+            <label class="payment-method__row">
+              <input type="radio" name="payment-method" value="bank" class="choice-indicator__input">
+              <span class="choice-indicator"></span>
+              <span class="payment-method__icon-wrap payment-method__icon-wrap--pink">
+                <img class="payment-method__icon" src="assets/icons/icon-bank.svg" alt="">
+              </span>
+              <span class="payment-method__label">Bank account</span>
+            </label>
+            <label class="payment-method__row">
+              <input type="radio" name="payment-method" value="paypal" class="choice-indicator__input">
+              <span class="choice-indicator"></span>
+              <span class="payment-method__icon-wrap">
+                <img class="payment-method__icon" src="assets/icons/icon-paypal.svg" alt="">
+              </span>
+              <span class="payment-method__label">Paypal</span>
+            </label>
+          </form>
+        </section>
+      </div>
+      <a class="action-button" href="profile.html">Update</a>
+    </section>
+  </div>
+</body>
+</html>
