@@ -138,11 +138,14 @@ export const lintHtmlDev = () =>
 
 export const lint = gulp.parallel(lintStyles, lintHtml);
 
-export const serve = () => {
+export const serve = (done) => {
   bs.init({
     server: {
       baseDir: './dist',
     },
+    host: '127.0.0.1',
+    listen: '127.0.0.1',
+    port: 5000,
     notify: false,
     open: true,
     cors: true,
@@ -153,6 +156,8 @@ export const serve = () => {
   gulp.watch(paths.assets.src, assets);
   gulp.watch(paths.images.src);
   gulp.watch(paths.scripts.watch, scripts);
+
+  done();
 };
 
 
