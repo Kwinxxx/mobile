@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
+    "deploy": "gh-pages -d dist",
     "lint": "gulp lint",
     "lint:scss": "gulp lintStyles",
     "lint:html": "gulp lintHtml",
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.29.0",
     "browser-sync": "^3.0.4",
     "del": "^8.0.0",
+    "gh-pages": "^6.3.0",
     "gulp": "^5.0.1",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-babel": "^8.0.0",
